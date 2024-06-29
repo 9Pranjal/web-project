@@ -1,0 +1,723 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    padding: 0 15px;
+    max-width: 1140px;
+}
+@font-face {
+    font-family: myFont1;
+    src: url(../font/Lato/Lato-Black.ttf);
+}
+@font-face {
+    font-family: myFont2;
+    src: url(../font/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: myFont3;
+    src: url(../font/Lato/Lato-Light.ttf);
+}
+/* :root{
+    
+} */
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.65%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.31%;
+}
+.col-8{
+    width: 66.64%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.63%;
+}
+.col-12{
+    width: 100%;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-direction-row{
+    flex-direction:row ;
+}
+.d-flex{
+    display: flex;
+}
+.contactus .contactus-icons{
+    justify-content: end;
+}
+.d-block{
+    display: inline-block;
+}
+.align-item-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-space-btw{
+    justify-content: space-between;
+}
+.text-align-center{
+    text-align: center;
+}
+.text-align-start{
+    text-align: start;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+.text-align-justify{
+    text-align: justify;
+}
+/* nav-bar start */
+.nav-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+.nav-bar .nav-logo a img{
+    padding: 20px;
+}
+nav{
+    padding: 0 15px;
+    font-family: myFont1;
+}
+nav ul li a{
+    padding: 20px;
+    transition: all 0.5s ease;
+    color: white;
+}
+nav ul li a:hover{
+    color: #f1d204;
+}
+
+/* nav-bar end */
+
+/* banner start */
+
+.bg{
+    background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-header.jpg);
+    height: 900px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.banner .banner-content{
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    /* margin:240px 0 280px 0; */
+}
+.banner .banner-content h1{
+    font-size: 75px;
+    font-family: myFont2;
+    margin-bottom: 29px;
+    color: white;
+}
+.banner .banner-content p{
+    font-family: myFont1;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px;
+    margin:0 200px 29px 200px;
+    line-height: 30px;
+    color: white;
+}
+.banner-content span{
+    color: #f1d204;
+}
+.banner-content button{
+    width: 242px;
+    height: 63px;
+    margin: 0px 15px;
+    font-family: myFont1;
+    font-size: 16px;
+    color: white;
+    transition: all 0.5s ease;
+}
+.button-1{
+    background-color: #00000033;
+    border: 2px solid white;
+}
+.button-1:hover{
+    background-color: #00000009;
+}
+.button-2{
+    border: none;
+    background-color: #f1d204;
+}
+.button-2:hover{
+    background-color: #6A4D8A;
+}
+
+/* banner end */
+
+/* about start */
+.about{
+    padding:65px 0 85px 0 ;
+}
+.about-heading h2{
+    margin-bottom:55px;
+    text-align: center;
+    color: #8c9597;
+    font-size: 35px;
+    font-family: myFont2;
+}
+.about .about-content p{
+    margin-left: 80px;
+    margin-bottom: 60px;
+    padding: 0 15px;
+    color: #8c9597;
+    font-family: myFont1;
+    font-weight: 100;
+    text-align: center;
+    line-height: 30px;
+}
+
+.about .prog-num .prog1-num{
+    background-color: #f18b6d;
+    color: white;
+    height: 29px;
+    width: 64px;
+    padding: 5px;
+    border-radius: 3px;
+    transform: translateX(170px);
+}
+.about .prog-num .arrow i{
+    font-size: 22px;
+}
+.about .prog-num .arrow .arrow1{
+    color: #f18b6d;
+    transform: translateY(20px);
+}
+.about .prog-num .arrow .arrow2{
+    color: #f1d204;;
+    transform: translateX(405px);
+    margin-top: 19px;
+}
+.about .prog-num .arrow .arrow3{
+    color: #6A4D8A;
+    transform: translateX(755px);
+    margin-top: 19px;
+}
+.about .prog-num .prog2-num{
+    background-color: #f1d204;
+    color: white;
+    height: 29px;
+    width: 64px;
+    padding: 5px;
+    border-radius: 3px;
+    transform: translateX(520px);
+}
+.about .prog-num .prog3-num{
+    background-color: #6A4D8A;
+    color: white;
+    height: 29px;
+    width: 64px;
+    padding: 5px;
+    border-radius: 3px;
+    transform: translateX(820px);
+}
+.about .data-anal .progress-bar1 i,
+.about .data-anal .progress-bar1 span{
+    color: #f18b6d;
+    padding: 7px;
+}
+.about .data-anal .progress-bar2 i,
+.about .data-anal .progress-bar2 span{
+    color: #f1d204;
+    padding: 7px;
+}
+.about .data-anal .progress-bar3 i,
+.about .data-anal .progress-bar3 span{
+    color: #6A4D8A;
+    padding: 7px;
+}
+.about .progress-bar1,
+.about .progress-bar2,
+.about .progress-bar3{
+    background-color: #8c9597;
+    width: 320px;
+    height: 2px;
+    margin: 15px 15px 0 15px;
+}
+.progress-bar1 div{
+    height: 4px;
+    width: 60%;
+    background-color: #f18b6d;
+}
+.progress-bar1 div span{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #f18b6d;
+    float: right;
+    margin-top: -4px;
+}
+
+.progress-bar2 div{
+    height: 4px;
+    width: 82%;
+    background-color: #f1d204;
+}
+.progress-bar2 div span{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #f1d204;
+    float: right;
+    margin-top: -4px;
+}
+
+.progress-bar3 div{
+    height: 4px;
+    width: 86%;
+    background-color: #6A4D8A;
+}
+.progress-bar3 div span{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #6A4D8A;
+    float: right;
+    margin-top: -4px;
+}
+/* about end */
+
+/* project start */
+
+.projects .project-detail{
+    background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png);
+    padding:65px 0;
+}
+.projects .project-detail .project-heading,
+.Services .services-heading,
+.team .team-heading,
+.contactus .contactus-heading{
+    color: #545454;
+    text-align: center;
+    font-size: 30px;
+    font-family: myFont2;
+    margin-bottom: 5px;
+}
+.projects .project-detail .project-Content,
+.Services .services-data,
+.team .team-para{
+    color: #8c9597;
+    text-align: center;
+    font-family: myFont1;
+}
+.projects .col-3 img{
+    width: 100%;
+    display: block;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+.projects .col-3 img:hover{
+    opacity: 0.5;
+}
+
+/* project end */
+
+/* testimonial start */
+
+.Testimonials{
+    background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/testiomnials-background.jpg);
+    padding: 50px 0 30px 0;
+}
+.Testimonials .testimonial-heading h2{
+    font-size: 30px;
+    font-family: myFont2;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.Testimonials .testimonial-img img{
+    border-radius: 50%;
+    padding: 40px 0 40px 0;
+    background-repeat: no-repeat;
+}
+.Testimonials .testimonial-data p {
+    color: #FFFFFF;
+    background-color: #6A4D8A;
+    padding: 50px 35px;
+    margin: 0 100px;
+    font-family: myFont1;
+    line-height: 30px;
+    font-weight: 100;
+}
+.arrow-down{
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #6A4D8A;
+    transform: translateX(590px);
+    margin-bottom: 20px;
+}
+.Testimonials .testimonial-name{
+    font-family: myFont2;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #FFFFFF;
+}
+.Testimonials .dots a{
+    color: #FFFFFF;
+    padding: 5px;
+    margin-top: 40px;
+    font-size: 12px;
+}
+/* testimonial end */
+
+/* services start */
+
+.Services{
+    padding: 65px 0;
+}
+.Services .Services-detail .row .col-4{
+    margin:0 15px ;
+}
+.Services .Services-detail{
+    margin: 40px 10px;
+}
+
+.Services .Services-detail .web-design a,
+.Services .Services-detail .seo-analisys a,
+.Services .Services-detail .web-dev a {
+    font-size: 30px;
+}
+.Services .Services-detail .web-design h2,
+.Services .Services-detail .seo-analisys h2,
+.Services .Services-detail .web-dev h2 {
+    font-size: 23px;
+    margin: 10px 0;
+    font-family: myFont2;
+}
+.Services .Services-detail .web-design p,
+.Services .Services-detail .seo-analisys p,
+.Services .Services-detail .web-dev p{
+    color: #8c9597;
+    line-height: 30px;
+    font-family: myFont3;
+    font-weight: 800;
+}
+.Services .Services-detail .web-design i,
+.Services .Services-detail .web-design h2{
+    color: #f18b6d;
+}
+.Services .Services-detail .seo-analisys i,
+.Services .Services-detail .seo-analisys h2{
+    color: #6A4D8A;
+}
+.Services .Services-detail .web-dev i,
+.Services .Services-detail .web-dev h2{
+    color: #f1d204;
+}
+
+/* services end */
+
+/* latest news start */
+
+.news{
+    background-color: #222f36;
+    padding: 75px 0;
+}
+
+.news .news-heading{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: myFont2;
+    margin-bottom:5px ;
+}
+.news .news-para p{
+    color: #8c9597;
+    font-family: myFont3;
+    font-weight: 700;
+}
+.news .blog-button button{
+    margin: 50px 0;
+    background-color: #f1d204;
+    height: 45px;
+    width: 155px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: myFont1;
+    transition: all 0.5s ease;
+}
+.news .blog-button button i,
+.news .news-data .read-more-button button i{
+    padding-right:10px ;
+}
+.news .blog-button button:hover{
+    background-color: #6A4D8A;
+}
+
+.news .news-data{
+    margin: 0 20px;
+}
+.news .news-data .col-4{
+    background-color: #FFFFFF;
+    width: 360px;
+    margin: 20px;
+}
+.news .news-data .img-heading{
+    color:#5e5e5e ;
+    font-size: 20px;
+    font-family: myFont2;
+    margin: 20px 0;
+    padding: 0 20px;
+    transition: all 0.5s ease;
+}
+.news .news-data .img-heading:hover{
+    color: #f1d204;
+}
+.news .news-data .img-para{
+    font-weight: myFont3;
+    color: #8c9597;
+    margin: 40px 0;
+    padding: 0 30px;
+}
+.news .news-data .read-more-button button{
+    color: #f1d204;
+    border: none;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    padding: 20px;
+    font-family: myFont1;
+    transition: all 0.5s ease;
+}
+.news .news-data .read-more-button button:hover{
+    color: #6A4D8A;
+}
+
+
+/* latest news end */
+
+/* counter start */
+
+.counter .bg-img{
+    background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/front-page-counter.jpg);
+    padding: 50px 0;
+    background-attachment: fixed;
+}
+.counter .col-4{
+    border-right: 1px solid white;
+}
+.counter .bg-img .row .col-4 h2{
+    font-size: 55px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    font-family: myFont2;
+}
+.counter .bg-img span{
+    font-family: myFont2;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+/* counter end */
+
+/* team start */
+
+.team .bg-img{
+    background-image: url(https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/images/front-page/pattern.png);
+    padding: 80px 20px;
+}
+.team .team-members{
+    margin-top: 40px;
+}
+.team .team-members .team-img img{
+    border-radius: 50%;
+    margin:20px 20px ;
+}
+.team .team-members .team-detail .team-memb-name{
+    color: #5e5e5e;
+    font-family: myFont2;
+    font-size: 20px;
+    margin: 12px 0;
+}
+.team .team-members .team-detail .proffession{
+    color: #f18b6d;
+    font-size: 16px;
+    font-family: myFont3;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.team .team-members .team-detail .proffession2{
+    color: #f1d204;
+    font-size: 16px;
+    font-family: myFont3;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.team .team-members .team-detail .proffession3{
+    color: #6A4D8A;
+    font-size: 16px;
+    font-family: myFont3;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.team .team-members .team-detail .team-work{
+    color: #8c9597;
+    font-size: 16px;
+    font-family: myFont3;
+    margin-bottom: 10px;
+}
+.team .team-members .team-detail .team-links i{
+    color: #f18b6d;
+    font-size: 15px;
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #f18b6d;
+    border-radius: 50%;
+}
+.team .team-members .team-detail .team-links2 i{
+    color: #f1d204;
+    font-size: 15px;
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #f1d204;
+    border-radius: 50%;
+}
+.team .team-members .team-detail .team-links3 i{
+    color: #6A4D8A;
+    font-size: 15px;
+    padding: 8px;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #6A4D8A;
+    border-radius: 50%;
+}
+/* team end */
+
+/* contactus start */
+
+.contactus{
+    padding: 50px 20px;
+}
+.contactus .contactus-heading{
+    margin-bottom: 100px;
+}
+.contactus .address span,
+.contactus .customer-support span{
+    color: #f1d204;
+    font-family: myFont1 ;
+}
+.contactus .address p,
+.contactus .customer-support p{
+    color: #8c9597;
+    font-family: myFont3;
+    margin-right: 50px;
+    font-weight: 800;
+} 
+.contactus .border-right{
+    border-right: 1px solid #8c9597;
+    margin: 0 20px;
+}
+.contactus .contactus-icons i{
+    padding: 10px;
+    color: #8c9597;
+    font-size: 13px;
+}
+.contactus .contactus-form{
+margin: 70px 0;
+}
+.contactus .contactus-form label{
+    padding: 0 10px;
+    color: #8c9597;
+}
+.contactus .contactus-form input{
+    margin: 10px;
+    width: 360px;
+    height: 35px;
+    background-color: #fcfcfc;
+    border: 1px solid #e1e1e1;
+}
+.contactus .contactus-form textarea{
+    width: 1120px;
+    height: 200px;
+    margin: 10px;
+    background-color: #fcfcfc;
+    border: 1px solid #e1e1e1;
+}
+
+
+
+/* contact us end */
+
+/* footer start */
+
+.footer{
+    padding-top: 40px;
+    background-color: #292825;
+    border-bottom: 1px solid #545454;
+}
+.footer .row{
+    margin: 0 60px;
+}
+.footer h2{
+    font-size: 20px;
+    font-family: myFont2;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.footer li{
+    padding: 5px 0;
+}
+.footer li i{
+    color: #8c9597;
+    padding-right:10px ;
+
+}
+.footer li a{
+    color: #8c9597;
+}
+.footer .end{
+    background-color: #242320;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.footer .end p{
+    color: #8c9597;
+}
+.footer .end span{
+    color: #FFFFFF;
+}
+
+/* footer end */
